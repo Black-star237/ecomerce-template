@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -11,28 +12,30 @@ const HeroSection = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-2">
               <p className="text-sm uppercase tracking-wider text-gray-400">
-                DISCOUNT UPTO 25% - HURRY UP
+                RÉDUCTION JUSQU'À 25% - DÉPÊCHEZ-VOUS
               </p>
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                Next generation
+                Nouvelle génération
                 <br />
                 <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                  Virtual reality
+                  Réalité virtuelle
                 </span>
               </h1>
             </div>
             
             <p className="text-xl text-gray-300 max-w-md">
-              We're changing the way you interact with technology, with VR experience 
-              straight out of science fiction, taking you into next-level reality gaming
+              Nous changeons votre façon d'interagir avec la technologie, avec une expérience VR 
+              tout droit sortie de la science-fiction, vous emmenant dans un gaming de nouvelle génération
             </p>
             
             <div className="flex space-x-4">
-              <Button className="bg-white text-black hover:bg-gray-200 px-8 py-3 text-lg">
-                Shop Now
-              </Button>
+              <Link to="/shop">
+                <Button className="bg-white text-black hover:bg-gray-200 px-8 py-3 text-lg">
+                  Acheter maintenant
+                </Button>
+              </Link>
               <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg">
-                Watch Demo
+                Voir la démo
               </Button>
             </div>
           </div>

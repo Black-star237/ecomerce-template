@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const products = [
   {
@@ -43,9 +44,11 @@ const ProductGrid = () => {
                 </div>
                 
                 <div className="flex justify-between items-end">
-                  <Button variant="secondary" className="bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-black">
-                    Shop Now
-                  </Button>
+                  <Link to="/shop">
+                    <Button variant="secondary" className="bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-black">
+                      Shop Now
+                    </Button>
+                  </Link>
                   <img 
                     src={product.image} 
                     alt={product.title}
